@@ -39,5 +39,21 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-    
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <!-- The tests depend on the non-modular core test-jar, whose
+                         io.github.bucket4j.util package is split with the explicit
+                         io.github.bucket4j.core module. Run them on the classpath,
+                         as before the module descriptor was added. -->
+                    <useModulePath>false</useModulePath>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
