@@ -66,7 +66,7 @@
         <lettuce.version>6.1.8.RELEASE</lettuce.version>
         <vertx.redis.client.version>5.0.8</vertx.redis.client.version>
         <glide.version>2.2.1</glide.version>
-        <caffeine.version>2.9.3</caffeine.version>
+        <caffeine.version>3.3.1</caffeine.version>
         <mssql.version>12.4.2.jre8</mssql.version>
         <ojdbc.version>23.2.0.0</ojdbc.version>
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
